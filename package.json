@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "[ -f vite.config.js ] && vite build || echo 'Nenhum build necessário'",
-    "preview": "vite preview",
     "start": "node server.js",
-    "api": "nodemon server.js"
+    "api": "nodemon server.js",
+    "build:frontend": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [
     "financeiro",
