@@ -7,7 +7,7 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "api": "nodemon server.js",
-    "build:frontend": "vite build",
+    "build": "if exist vite.config.js (vite build) else (echo Nenhum build necessário)",
     "preview": "vite preview"
   },
   "keywords": [
