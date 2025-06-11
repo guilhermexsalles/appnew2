@@ -7,7 +7,8 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "api": "nodemon server.js",
-  "build": "vite build",
+  "build": "node -e \"require('fs').existsSync('vite.config.js') ? require('child_process').execSync('vite build', {stdio: 'inherit'}) : console.log('Nenhum build necessário')\""
+
     "preview": "vite preview"
   },
   "keywords": [
